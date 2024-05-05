@@ -1,0 +1,36 @@
+.calculator {
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+body{
+    background-color: cornflowerblue;
+}
+
